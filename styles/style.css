@@ -1,0 +1,15 @@
+#ptag {
+    background-color:indianred;
+    font-size:25px;
+}
+
+p {
+    font-size:25px;
+    border-color:blue;
+    border-width:1px;
+    border-style:dotted;
+}
+
+.myclass {
+    box-shadow: 5px 10px rgb(0,0,0,0.4);
+}
