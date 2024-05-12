@@ -15,25 +15,41 @@
   </head>
   <body>
     <main>
-        <h1 style="font-size: 100px;color: green;">It's our first header together - yay!</h1>
-        <p id="ptag" class="myclass">Let's start by creating an ordered list of our proposed next steps for this project:&#41;</p>
+        <h1 style="font-size: 60px;color: green;">HTML, CSS, and JavaScript - The BASICS</h1>
+        <p id="ptag" class="myclass">Let's start by creating an ordered list of things I'd like to accomplish for this project :&#41;</p>
         <p>Ready. Set. Go!</p>
         <ol>
-            <li>Add an ordered list.  <input class="checks" type="checkbox"/></li>
-            <li>Add style to this page. <input class="checks" type="checkbox"/></li>
-            <li>Add checkmark boxes next to our list items.</li>
+            <li>Add an ordered list.  <input class="checks" type="checkbox" checked/></li>
+            <li>Add style to this page. <input class="checks" type="checkbox" checked/></li>
+            <li>Add checkmark boxes next to our list items. <input class="checks" type="checkbox" checked/></li>
         </ol>
+        <p id="demo">before javascript.. Interact with a checkbox to change me</p>
+        <button onclick="playMusic()">Free fart</button>
 
-        <p id="demo">initial text</p>
-        
-        <button onclick="playMusic()">Press me</button>
+        <p id="ptag" class="myclass">Now my second list of <b>un</b>ordered items that I'd like to accomplish in an upcoming project</p>
+        <ul>
+          <li href="https://www.youtube.com/watch?v=d5x0JCZbAJs">Research React front end development framework</li>
+          <li>Create a new github repo to collaborate with RAGSOOK and add him</li>
+          <li>Meet with RAGSOOK to start application.  Here are some ideas on what the app could be:</li>
+          <ul>
+            <li>Something music related.  Maybe to start with, we could make something that looks like a piano, and when you click a key, it plays a note</li>
+            <li>Maybe add a button or different page to record the end-users voice, and play it back in a different octive?</li>
+            <li>Or play it back normal, with the addition of the octive?</li>
+            <li>Or play a harmonic of the recording with it back</li>
+            <li>Or play a drum beat along with the song?</li>
+          </ul>
+          <li>Figure out how to deploy it in a hosted website?</li>
+          <li>Add login functionality?</li>
+          <li>Add database functionality?</li>
+          <li>Make it a mobile app as well as a browser based app</li>
+          <li>Add some back end development or api's</li>
+        </ul>
     </main>
     <script>
-      console.log("Hello Casey");
         const elements = document.getElementsByClassName("checks");
         for(let element of elements) {
             element.addEventListener("click", function() {
-                document.getElementById("demo").innerHTML = "Hello World";
+                document.getElementById("demo").innerHTML = "After Java Script";
             });
         }
     </script>
