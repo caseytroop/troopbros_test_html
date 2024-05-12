@@ -6,6 +6,12 @@
     <title>Troop Brothers HTML</title>
     <link rel="stylesheet" href="./styles/style.css">
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <script>
+      function playMusic(){
+        var music = new Audio('forCasey.m4a');
+        music.play();
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -18,6 +24,7 @@
             <li>Add checkmark boxes next to our list items.</li>
         </ol>
         
+        <button onclick="playMusic()">Press me</button>
     </main>
     <!-- <script src="index.js"></script> -->
   </body>
