@@ -19,13 +19,23 @@
         <p id="ptag" class="myclass">Let's start by creating an ordered list of our proposed next steps for this project:&#41;</p>
         <p>Ready. Set. Go!</p>
         <ol>
-            <li>Add an ordered list.  Done</li>
-            <li>Add style to this page. Done</li>
+            <li>Add an ordered list.  <input class="checks" type="checkbox"/></li>
+            <li>Add style to this page. <input class="checks" type="checkbox"/></li>
             <li>Add checkmark boxes next to our list items.</li>
         </ol>
+
+        <p id="demo">initial text</p>
         
         <button onclick="playMusic()">Press me</button>
     </main>
-    <!-- <script src="index.js"></script> -->
+    <script>
+      console.log("Hello Casey");
+        const elements = document.getElementsByClassName("checks");
+        for(let element of elements) {
+            element.addEventListener("click", function() {
+                document.getElementById("demo").innerHTML = "Hello World";
+            });
+        }
+    </script>
   </body>
 </html>
